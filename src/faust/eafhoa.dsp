@@ -148,6 +148,22 @@ a45(a,e) = 1/8*sqrt(105/2)*cos(3*a)*sin(e)*(cos(e))^3*(11*(sin(e))^2-3);
 a46(a,e) = 3/16*sqrt(7)*cos(4*a)*(cos(e))^4*(11*(sin(e))^2-1);
 a47(a,e) = 3/8*sqrt(77/2)*cos(5*a)*sin(e)*(cos(e))^5;
 a48(a,e) = 1/16*sqrt(231/2)*cos(6*a)*(cos(e))^6;
+// seventh order
+a49(a,e) = 1/32*sqrt(429)*sin(7*a)*(cos(e))^7;
+a50(a,e) = 1/16*sqrt(3003/2)*sin(6*a)*sin(e)*(cos(e))^6;
+a51(a,e) = 1/32*sqrt(231)*sin(5*a)*(13*(sin(e))^2-1)*(cos(e))^5;
+a52(a,e) = 1/16*sqrt(231)*sin(4*a)*(13*(sin(e))^3-3*sin(e))*(cos(e))^4;
+a53(a,e) = 1/32*sqrt(21)*sin(3*a)*(143*(sin(e))^4-66*(sin(e))^2+3)*(cos(e))^3;
+a54(a,e) = 1/16*sqrt(21/2)*sin(2*a)*(143*(sin(e))^5-110*(sin(e))^3+15*sin(e))*(cos(e))^2;
+a55(a,e) = 1/32*sqrt(7)*sin(a)*(429*(sin(e))^6-495*(sin(e))^4+135*(sin(e))^2-5)*cos(e);
+a56(e) = 1/16*(429*(sin(e))^7-693*(sin(e))^5+315*(sin(e))^3-35*sin(e));
+a57(a,e) = 1/32*sqrt(7)*cos(a)*(429*(sin(e))^6-495*(sin(e))^4+135*(sin(e))^2-5)*cos(e);
+a58(a,e) = 1/16*sqrt(21/2)*cos(2*a)*(143*(sin(e))^5-110*(sin(e))^3+15*sin(e))*(cos(e))^2;
+a59(a,e) = 1/32*sqrt(21)*cos(3*a)*(143*(sin(e))^4-66*(sin(e))^2+3)*(cos(e))^3;
+a60(a,e) = 1/16*sqrt(231)*cos(4*a)*(13*(sin(e))^3-3*sin(e))*(cos(e))^4;
+a61(a,e) = 1/32*sqrt(231)*cos(5*a)*(13*(sin(e))^2-1)*(cos(e))^5;
+a62(a,e) = 1/16*sqrt(3003/2)*cos(6*a)*sin(e)*(cos(e))^6;
+a63(a,e) = 1/32*sqrt(429)*cos(7*a)*(cos(e))^7;
 
 // ENCODERS
 // mono to first order
@@ -301,6 +317,72 @@ mto6o(a,e) = _ <: _*a0,
                   _*a47(a,e),
                   _*a48(a,e);
 
+// mono to seventh order
+mto7o(a,e) = _ <: _*a0,
+                  _*a1(a,e),
+                  _*a2(e),
+                  _*a3(a,e),
+                  _*a4(a,e),
+                  _*a5(a,e),
+                  _*a6(e),
+                  _*a7(a,e),
+                  _*a8(a,e),
+                  _*a9(a,e),
+                  _*a10(a,e),
+                  _*a11(a,e),
+                  _*a12(e),
+                  _*a13(a,e),
+                  _*a14(a,e),
+                  _*a15(a,e),
+                  _*a16(a,e),
+                  _*a17(a,e),
+                  _*a18(a,e),
+                  _*a19(a,e),
+                  _*a20(e),
+                  _*a21(a,e),
+                  _*a22(a,e),
+                  _*a23(a,e),
+                  _*a24(a,e),
+                  _*a25(a,e),
+                  _*a26(a,e),
+                  _*a27(a,e),
+                  _*a28(a,e),
+                  _*a29(a,e),
+                  _*a30(e),
+                  _*a31(a,e),
+                  _*a32(a,e),
+                  _*a33(a,e),
+                  _*a34(a,e),
+                  _*a35(a,e),
+                  _*a36(a,e),
+                  _*a37(a,e),
+                  _*a38(a,e),
+                  _*a39(a,e),
+                  _*a40(a,e),
+                  _*a41(a,e),
+                  _*a42(e),
+                  _*a43(a,e),
+                  _*a44(a,e),
+                  _*a45(a,e),
+                  _*a46(a,e),
+                  _*a47(a,e),
+                  _*a48(a,e),
+                  _*a49(a,e),
+                  _*a50(a,e),
+                  _*a51(a,e),
+                  _*a52(a,e),
+                  _*a53(a,e),
+                  _*a54(a,e),
+                  _*a55(a,e),
+                  _*a56(e),
+                  _*a57(a,e),
+                  _*a58(a,e),
+                  _*a59(a,e),
+                  _*a60(a,e),
+                  _*a61(a,e),
+                  _*a62(a,e),
+                  _*a63(a,e);
+
 // VMIC DECODERS
 vmic1(a,e,pp) = _*a0*(1-pp) + (pp*(_*a1(a,e) +
                                    _*a2(e))) +
@@ -441,6 +523,70 @@ vmic6(a,e,pp) = _*a0*(1-pp) + (pp*(_*a1(a,e) +
                                    _*a47(a,e) +
                                    _*a48(a,e)));
 
+vmic7(a,e,pp) = _*a0*(1-pp) + (pp*(_*a1(a,e) +
+                                   _*a2(e) +
+                                   _*a3(a,e) +
+                                   _*a4(a,e) + 
+                                   _*a5(a,e) +
+                                   _*a6(e) +
+                                   _*a7(a,e) +
+                                   _*a8(a,e) +
+                                   _*a9(a,e) +
+                                   _*a10(a,e) +
+                                   _*a11(a,e) +
+                                   _*a12(e) +
+                                   _*a13(a,e) +
+                                   _*a14(a,e) +
+                                   _*a15(a,e) +
+                                   _*a16(a,e) +
+                                   _*a17(a,e) +
+                                   _*a18(a,e) +
+                                   _*a19(a,e) +
+                                   _*a20(e) +
+                                   _*a21(a,e) +
+                                   _*a22(a,e) +
+                                   _*a23(a,e) +
+                                   _*a24(a,e) +
+                                   _*a25(a,e) +
+                                   _*a26(a,e) +
+                                   _*a27(a,e) +
+                                   _*a28(a,e) +
+                                   _*a29(a,e) +
+                                   _*a30(e) +
+                                   _*a31(a,e) +
+                                   _*a32(a,e) +
+                                   _*a33(a,e) +
+                                   _*a34(a,e) +
+                                   _*a35(a,e) +
+                                   _*a36(a,e) +
+                                   _*a37(a,e) +
+                                   _*a38(a,e) +
+                                   _*a39(a,e) +
+                                   _*a40(a,e) +
+                                   _*a41(a,e) +
+                                   _*a42(e) +
+                                   _*a43(a,e) +
+                                   _*a44(a,e) +
+                                   _*a45(a,e) +
+                                   _*a46(a,e) +
+                                   _*a47(a,e) +
+                                   _*a48(a,e) +
+                                   _*a49(a,e) +
+                                   _*a50(a,e) +
+                                   _*a51(a,e) +
+                                   _*a52(a,e) +
+                                   _*a53(a,e) +
+                                   _*a54(a,e) +
+                                   _*a55(a,e) +
+                                   _*a56(e) +
+                                   _*a57(a,e) +
+                                   _*a58(a,e) +
+                                   _*a59(a,e) +
+                                   _*a60(a,e) + 
+                                   _*a61(a,e) +
+                                   _*a62(a,e) +
+                                   _*a63(a,e)));
+
 // process = os.osc(1000) : mto1o(0,0) : vmic1(az,el,pp);
 // process = os.osc(1000) <: _, _*u(az,el);
 // process = os.osc(1000)/sqrt(2) : mto2o(ma.PI/10,ma.PI/9) : vmic2(az,el,pp);
@@ -448,8 +594,8 @@ vmic6(a,e,pp) = _*a0*(1-pp) + (pp*(_*a1(a,e) +
 // process = os.osc(700)/sqrt(2) : mto3o(ma.PI/10,ma.PI/9) <: par(i, 4, vmic3(ma.PI-(ma.PI/(i+1)),0,0.5));
 // process = os.osc(700)/sqrt(2) : mto4o(ma.PI/10,ma.PI/9) : vmic4(az,el,pp);
 // process = os.osc(700)/sqrt(2) : mto5o(ma.PI/10,ma.PI/9) : vmic5(az,el,pp);
-process = os.osc(700)/sqrt(2) : mto6o(ma.PI/10,ma.PI/9) :> vmic6(az,el,pp);
-
+// process = os.osc(700)/sqrt(2) : mto6o(ma.PI/10,ma.PI/9) : vmic6(az,el,pp);
+process = os.osc(700)/sqrt(2) : mto7o(ma.PI/10,ma.PI/9) : vmic7(az,el,pp);
 
 //ACN
 w = a0;
