@@ -595,7 +595,10 @@ vmic7(a,e,pp) = _*a0*(1-pp) + (pp*(_*a1(a,e) +
 // process = os.osc(700)/sqrt(2) : mto4o(ma.PI/10,ma.PI/9) : vmic4(az,el,pp);
 // process = os.osc(700)/sqrt(2) : mto5o(ma.PI/10,ma.PI/9) : vmic5(az,el,pp);
 // process = os.osc(700)/sqrt(2) : mto6o(ma.PI/10,ma.PI/9) : vmic6(az,el,pp);
-process = os.osc(700)/sqrt(2) : mto7o(ma.PI/10,ma.PI/9) : vmic7(az,el,pp);
+// process = os.osc(700)/sqrt(2) : mto7o(ma.PI/10,ma.PI/9) : vmic7(az,el,pp);
+// CUBE DECODER
+process = os.osc(700)/sqrt(2) : mto3o(ma.PI/4,ma.PI/4) <: par(i, 4, vmic3((ma.PI/2*(i+1))-ma.PI/4,ma.PI/4,0.5)),
+                                                          par(i, 4, vmic3((ma.PI/2*(i+1))-ma.PI/4,(0-ma.PI/4),0.5));
 
 //ACN
 w = a0;
