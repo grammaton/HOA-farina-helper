@@ -1,0 +1,786 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21540\viewh12560\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 giPi = 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303820\
+\uc0\u8232 \
+opcode ambixFormula, i, iii\
+	\
+	iTheta,iPhi,indx xin\
+; 1\
+	if (indx == 0) then\
+	iout = 1\
+	elseif (indx == 1) then\
+	iout = sin(iTheta) * cos(iPhi)\
+	elseif (indx == 2) then\
+	iout = sin(iTheta)\
+	elseif (indx == 3) then\
+	iout = cos(iTheta) * cos(iPhi)\
+; 2	\
+	elseif (indx == 4) then\
+	iout = sqrt(3/4) * sin(2*iTheta) * (cos(iPhi)^2)\
+	elseif (indx == 5) then\
+	iout = sqrt(3/4) * sin(iTheta) * sin(2*iPhi)\
+	elseif (indx == 6) then\
+	iout = (1/2) * (3* (sin(iPhi)^2) - 1)\
+	elseif (indx == 7) then\
+	iout = sqrt(3/4) * cos(iTheta) * sin(2*iPhi)\
+	elseif (indx == 8) then\
+	iout = sqrt(3/4) * cos(2*iTheta) * (cos(iPhi)^2)\
+; 3	\
+	elseif (indx == 9) then\
+	iout = sqrt(5/8) * sin(3*iTheta) * (cos(iPhi)^3)\
+	elseif (indx == 10) then\
+	iout = sqrt(15/4) * sin(2*iTheta) * sin(iPhi) * (cos(iPhi)^2)\
+	elseif (indx == 11) then\
+	iout = sqrt(3/8) * sin(iTheta) * cos(iPhi) * (5*(sin(iPhi)^2)-1)\
+	elseif (indx == 12) then\
+	iout = (1/2) * sin(iPhi) * (5*(sin(iPhi)^2)-3)\
+	elseif (indx == 13) then\
+	iout = sqrt(3/8) * cos(iTheta) * cos(iPhi) * (5*(sin(iPhi)^2)-1)\
+	elseif (indx == 14) then\
+	iout = sqrt(15/4) * cos(2*iTheta) * sin(iPhi) * (cos(iPhi)^2)\
+	elseif (indx == 15) then\
+	iout = sqrt(5/8) * cos(3*iTheta) * (cos(iPhi)^3)\
+; 4	\
+	elseif (indx == 16) then\
+	iout = sqrt(35/64)*sin(4*iTheta)*(cos(iPhi)^4)\
+	elseif (indx == 17) then\
+	iout = sqrt(35/8)*sin(3*iTheta)*sin(iPhi)*(cos(iPhi)^3)\
+	elseif (indx == 18) then\
+	iout = sqrt(5/16)*sin(2*iTheta)*(cos(iPhi)^2)*(7*(sin(iPhi)^2)-1)\
+	elseif (indx == 19) then\
+	iout = sqrt(5/32)*sin(iTheta)*sin(2*iPhi)*(7*(sin(iPhi)^2)-3)\
+	elseif (indx == 20) then\
+	iout = (1/8)*(35*(sin(iPhi)^4)-30*(sin(iPhi)^2)+3)\
+	elseif (indx == 21) then\
+	iout = sqrt(5/32)*cos(iTheta)*sin(2*iPhi)*(7*(sin(iPhi)^2)-3)\
+	elseif (indx == 22) then\
+	iout = sqrt(5/16)*cos(2*iTheta)*(cos(iPhi))^2*(7*(sin(iPhi)^2)-1)\
+	elseif (indx == 23) then\
+	iout = sqrt(35/8)*cos(3*iTheta)*sin(iPhi)*(cos(iPhi)^3)\
+	elseif (indx == 24) then\
+	iout = sqrt(35/64)*cos(4*iTheta)*(cos(iPhi)^4)\
+; 5	\
+	elseif (indx == 25) then\
+	iout = sqrt(63/128)*sin(5*iTheta)*(cos(iPhi)^5)\
+	elseif (indx == 26) then\
+	iout = sqrt(315/64)*sin(4*iTheta)*sin(iPhi)*(cos(iPhi)^4)\
+	elseif (indx == 27) then\
+	iout = sqrt(35/128)*sin(3*iTheta)*(cos(iPhi))^3*(9*(sin(iPhi)^2)-1)\
+	elseif (indx == 28) then\
+	iout = sqrt(105/16)*sin(2*iTheta)*sin(iPhi)*(cos(iPhi)^2)*(3*(sin(iPhi)^2)-1)\
+	elseif (indx == 29) then\
+	iout = sqrt(15/64)*sin(iTheta)*cos(iPhi)*(21*(sin(iPhi)^4)-14*(sin(iPhi)^2)+1)\
+	elseif (indx == 30) then\
+	iout = (1/8)*(63*(sin(iPhi)^5)-70*(sin(iPhi)^3)+15*sin(iPhi))\
+	elseif (indx == 31) then\
+	iout = sqrt(15/64)*cos(iTheta)*cos(iPhi)*(21*(sin(iPhi)^4)-14*(sin(iPhi)^2)+1)\
+	elseif (indx == 32) then\
+	iout = sqrt(105/16)*cos(2*iTheta)*sin(iPhi)*(cos(iPhi)^2)*(3*(sin(iPhi)^2)-1)\
+	elseif (indx == 33) then\
+	iout = sqrt(35/128)*cos(3*iTheta)*(cos(iPhi)^3)*(9*(sin(iPhi)^2)-1)\
+	elseif (indx == 34) then\
+	iout = sqrt(315/64)*cos(4*iTheta)*sin(iPhi)*(cos(iPhi)^4)\
+	elseif (indx == 35) then\
+	iout = sqrt(63/128)*cos(5*iTheta)*(cos(iPhi)^5)\
+; 6	\
+	elseif (indx == 36) then\
+	iout = (1/16)*sqrt(231/2)*sin(6*iTheta)*(cos(iPhi)^6)\
+	elseif (indx == 37) then\
+	iout = (3/8)*sqrt(77/2)*sin(5*iTheta)*sin(iPhi)*(cos(iPhi)^5)\
+	elseif (indx == 38) then\
+	iout = (3/16)*sqrt(7)*sin(4*iTheta)*(cos(iPhi)^4)*(11*(sin(iPhi)^2)-1)\
+	elseif (indx == 39) then\
+	iout = (1/8)*sqrt(105/2)*sin(3*iTheta)*sin(iPhi)*(cos(iPhi)^3)*(11*(sin(iPhi)^2)-3)\
+	elseif (indx == 40) then\
+	iout = (1/16)*sqrt(105/2)*sin(2*iTheta)*(cos(iPhi)^2)*(33*(sin(iPhi)^4)-18*(sin(iPhi)^2)+1)\
+	elseif (indx == 41) then\
+	iout = (1/16)*sqrt(21)*sin(iTheta)*sin(2*iPhi)*(33*(sin(iPhi)^4)-30*(sin(iPhi)^2)+5)\
+	elseif (indx == 42) then\
+	iout = (1/16)*(231*(sin(iPhi)^6)-315*(sin(iPhi)^4)+105*(sin(iPhi)^2)-5)\
+	elseif (indx == 43) then\
+	iout = (1/16)*sqrt(21)*cos(iTheta)*sin(2*iPhi)*(33*(sin(iPhi)^4)-30*(sin(iPhi)^2)+5)\
+	elseif (indx == 44) then\
+	iout = (1/16)*sqrt(105/2)*cos(2*iTheta)*(cos(iPhi)^2)*(33*(sin(iPhi)^4)-18*(sin(iPhi)^2)+1)\
+	elseif (indx == 45) then\
+	iout = (1/8)*sqrt(105/2)*cos(3*iTheta)*sin(iPhi)*(cos(iPhi))^3*(11*(sin(iPhi)^2)-3)\
+	elseif (indx == 46) then\
+	iout = (3/16)*sqrt(7)*cos(4*iTheta)*(cos(iPhi)^4)*(11*(sin(iPhi)^2)-1)\
+	elseif (indx == 47) then\
+	iout = (3/8)*sqrt(77/2)*cos(5*iTheta)*sin(iPhi)*(cos(iPhi)^5)\
+	elseif (indx == 48) then\
+	iout = (1/16)*sqrt(231/2)*cos(6*iTheta)*(cos(iPhi)^6)\
+; 7	\
+	elseif (indx == 49) then\
+	iout = (1/32)*sqrt(429)*sin(7*iTheta)*(cos(iPhi)^7)\
+	elseif (indx == 50) then\
+	iout = (1/16)*sqrt(3003/2)*sin(6*iTheta)*sin(iPhi)*(cos(iPhi)^6)\
+	elseif (indx == 51) then\
+	iout = (1/32)*sqrt(231)*sin(5*iTheta)*(13*(sin(iPhi)^2)-1)*(cos(iPhi)^5)\
+	elseif (indx == 52) then\
+	iout = (1/16)*sqrt(231)*sin(4*iTheta)*(13*(sin(iPhi)^3)-3*sin(iPhi))*(cos(iPhi)^4)\
+	elseif (indx == 53) then\
+	iout = (1/32)*sqrt(21)*sin(3*iTheta)*(143*(sin(iPhi)^4)-66*(sin(iPhi)^2)+3)*(cos(iPhi)^3)\
+	elseif (indx == 54) then\
+	iout = (1/16)*sqrt(21/2)*sin(2*iTheta)*(143*(sin(iPhi)^5)-110*(sin(iPhi)^3)+15*sin(iPhi))*(cos(iPhi)^2)\
+	elseif (indx == 55) then\
+	iout = (1/32)*sqrt(7)*sin(iTheta)*(429*(sin(iPhi)^6)-495*(sin(iPhi)^4)+135*(sin(iPhi))^2-5)*cos(iPhi)\
+	elseif (indx == 56) then\
+	iout = (1/16)*(429*(sin(iPhi)^7)-693*(sin(iPhi)^5)+315*(sin(iPhi)^3)-35*sin(iPhi))\
+	elseif (indx == 57) then\
+	iout = (1/32)*sqrt(7)*cos(iTheta)*(429*(sin(iPhi)^6)-495*(sin(iPhi)^4)+135*(sin(iPhi)^2)-5)*cos(iPhi)\
+	elseif (indx == 58) then\
+	iout = (1/16)*sqrt(21/2)*cos(2*iTheta)*(143*(sin(iPhi)^5)-110*(sin(iPhi)^3)+15*sin(iPhi))*(cos(iPhi)^2)\
+	elseif (indx == 59) then\
+	iout = (1/32)*sqrt(21)*cos(3*iTheta)*(143*(sin(iPhi)^4)-66*(sin(iPhi)^2)+3)*(cos(iPhi)^3)\
+	elseif (indx == 60) then\
+	iout = (1/16)*sqrt(231)*cos(4*iTheta)*(13*(sin(iPhi)^3)-3*sin(iPhi))*(cos(iPhi)^4)\
+	elseif (indx == 61) then\
+	iout = (1/32)*sqrt(231)*cos(5*iTheta)*(13*(sin(iPhi)^2)-1)*(cos(iPhi)^5)\
+	elseif (indx == 62) then\
+	iout = (1/16)*sqrt(3003/2)*cos(6*iTheta)*sin(iPhi)*(cos(iPhi)^6)\
+	elseif (indx == 63) then\
+	iout = (1/32)*sqrt(429)*cos(7*iTheta)*(cos(iPhi)^7)\
+\uc0\u8232 \
+\uc0\u8232 \
+	endif\
+\uc0\u8232 \
+	xout iout\
+endop\
+\uc0\u8232 \
+opcode ambixEncode, a[], aiii\
+	\
+	//encode + SN3D normalization\
+	aSig, iTheta, iPhi, iOrder xin\
+	// primo ordine		\
+	aSig0 = aSig * ambixFormula(iTheta,iPhi,0)\
+	aSig1 = aSig * ambixFormula(iTheta,iPhi,1)\
+	aSig2 = aSig * ambixFormula(iTheta,iPhi,2)\
+	aSig3 = aSig * ambixFormula(iTheta,iPhi,3)\
+	\
+	// secondo ordine\
+	aSig4 = aSig * ambixFormula(iTheta,iPhi,4)\
+	aSig5 = aSig * ambixFormula(iTheta,iPhi,5)\
+	aSig6 = aSig * ambixFormula(iTheta,iPhi,6)\
+	aSig7 = aSig * ambixFormula(iTheta,iPhi,7)\
+	aSig8 = aSig * ambixFormula(iTheta,iPhi,8)\
+	\
+	// terzo ordine\
+	aSig9 = aSig * ambixFormula(iTheta,iPhi,9)\
+	aSig10 = aSig * ambixFormula(iTheta,iPhi,10)\
+	aSig11 = aSig * ambixFormula(iTheta,iPhi,11)\
+	aSig12 = aSig * ambixFormula(iTheta,iPhi,12)\
+	aSig13 = aSig * ambixFormula(iTheta,iPhi,13)\
+	aSig14 = aSig * ambixFormula(iTheta,iPhi,14)\
+	aSig15 = aSig * ambixFormula(iTheta,iPhi,15)\
+	\
+	// quarto ordine\
+	aSig16 = aSig * ambixFormula(iTheta,iPhi,16)\
+	aSig17 = aSig * ambixFormula(iTheta,iPhi,17)\
+	aSig18 = aSig * ambixFormula(iTheta,iPhi,18) \
+	aSig19 = aSig * ambixFormula(iTheta,iPhi,19) \
+	aSig20 = aSig * ambixFormula(iTheta,iPhi,20) \
+	aSig21 = aSig * ambixFormula(iTheta,iPhi,21) \
+	aSig22 = aSig * ambixFormula(iTheta,iPhi,22) \
+	aSig23 = aSig * ambixFormula(iTheta,iPhi,23) \
+	aSig24 = aSig * ambixFormula(iTheta,iPhi,24) \
+	\
+	// quinto ordine\
+	aSig25 = aSig * ambixFormula(iTheta,iPhi,25) \
+	aSig26 = aSig * ambixFormula(iTheta,iPhi,26) \
+	aSig27 = aSig * ambixFormula(iTheta,iPhi,27) \
+	aSig28 = aSig * ambixFormula(iTheta,iPhi,28) \
+	aSig29 = aSig * ambixFormula(iTheta,iPhi,29) \
+	aSig30 = aSig * ambixFormula(iTheta,iPhi,30) \
+	aSig31 = aSig * ambixFormula(iTheta,iPhi,31) \
+	aSig32 = aSig * ambixFormula(iTheta,iPhi,32) \
+	aSig33 = aSig * ambixFormula(iTheta,iPhi,33) \
+	aSig34 = aSig * ambixFormula(iTheta,iPhi,34) \
+	aSig35 = aSig * ambixFormula(iTheta,iPhi,35) \
+	\
+	// sesto ordine	\
+	aSig36 = aSig * ambixFormula(iTheta,iPhi,36) \
+	aSig37 = aSig * ambixFormula(iTheta,iPhi,37) \
+	aSig38 = aSig * ambixFormula(iTheta,iPhi,38) \
+	aSig39 = aSig * ambixFormula(iTheta,iPhi,39) \
+	aSig40 = aSig * ambixFormula(iTheta,iPhi,40) \
+	aSig41 = aSig * ambixFormula(iTheta,iPhi,41) \
+	aSig42 = aSig * ambixFormula(iTheta,iPhi,42) \
+	aSig43 = aSig * ambixFormula(iTheta,iPhi,43) \
+	aSig44 = aSig * ambixFormula(iTheta,iPhi,44) \
+	aSig45 = aSig * ambixFormula(iTheta,iPhi,45) \
+	aSig46 = aSig * ambixFormula(iTheta,iPhi,46) \
+	aSig47 = aSig * ambixFormula(iTheta,iPhi,47) \
+	aSig48 = aSig * ambixFormula(iTheta,iPhi,48) \
+	\
+	// settimo ordine	\
+	aSig49 = aSig * ambixFormula(iTheta,iPhi,49) \
+	aSig50 = aSig * ambixFormula(iTheta,iPhi,50) \
+	aSig51 = aSig * ambixFormula(iTheta,iPhi,51) \
+	aSig52 = aSig * ambixFormula(iTheta,iPhi,52) \
+	aSig53 = aSig * ambixFormula(iTheta,iPhi,53) \
+	aSig54 = aSig * ambixFormula(iTheta,iPhi,54) \
+	aSig55 = aSig * ambixFormula(iTheta,iPhi,55) \
+	aSig56 = aSig * ambixFormula(iTheta,iPhi,56) \
+	aSig57 = aSig * ambixFormula(iTheta,iPhi,57) \
+	aSig58 = aSig * ambixFormula(iTheta,iPhi,58) \
+	aSig59 = aSig * ambixFormula(iTheta,iPhi,59) \
+	aSig60 = aSig * ambixFormula(iTheta,iPhi,60) \
+	aSig61 = aSig * ambixFormula(iTheta,iPhi,61) \
+	aSig62 = aSig * ambixFormula(iTheta,iPhi,62) \
+	aSig63 = aSig * ambixFormula(iTheta,iPhi,63) \
+	\
+	//order selection + inphase decode\
+	\
+	if(iOrder == 0) then\
+	\
+	iOrder pow iOrder+1, 2\
+	abForm[] init iOrder\
+	\
+	abForm[0] = aSig\
+	\
+	elseif(iOrder == 1) then\
+	\
+	iOrder pow iOrder+1, 2\
+	abForm[] init iOrder\
+	\
+	abForm[0] = aSig0// * (1/sqrt(2))\
+	abForm[1] = aSig1 * (1/2)\
+	abForm[2] = aSig2 * (1/2)\
+	abForm[3] = aSig3 * (1/2)\
+	\
+	elseif(iOrder == 2) then\
+	\
+	iOrder pow iOrder+1, 2\
+	abForm[] init iOrder\
+	\
+	abForm[0] = aSig0// * (1/sqrt(2))\
+	\
+	abForm[1] = aSig1 * (2/3)\
+	abForm[2] = aSig2 * (2/3)\
+	abForm[3] = aSig3 * (2/3)\
+	\
+	abForm[4] = aSig4 * (1/6)\
+	abForm[5] = aSig5 * (1/6)\
+	abForm[6] = aSig6 * (1/6)\
+	abForm[7] = aSig7 * (1/6)\
+	abForm[8] = aSig8 * (1/6)\
+	\
+	elseif(iOrder == 3) then\
+	\
+	iOrder pow iOrder+1, 2\
+	abForm[] init iOrder\
+	\
+	abForm[0] = aSig0// * (1/sqrt(2))\
+	\
+	abForm[1] = aSig1 * (3/4)\
+	abForm[2] = aSig2 * (3/4)\
+	abForm[3] = aSig3 * (3/4)\
+	\
+	abForm[4] = aSig4 * (3/10)\
+	abForm[5] = aSig5 * (3/10)\
+	abForm[6] = aSig6 * (3/10)\
+	abForm[7] = aSig7 * (3/10)\
+	abForm[8] = aSig8 * (3/10)\
+	\
+	abForm[9] = aSig9 * (1/20)\
+	abForm[10] = aSig10 * (1/20)\
+	abForm[11] = aSig11 * (1/20)\
+	abForm[12] = aSig12 * (1/20)\
+	abForm[13] = aSig13 * (1/20)\
+	abForm[14] = aSig14 * (1/20)\
+	abForm[15] = aSig15 * (1/20)\
+	\
+	elseif(iOrder == 4) then\
+	\
+	iOrder pow iOrder+1, 2\
+	abForm[] init iOrder\
+	\
+	abForm[0] = aSig0// * (1/sqrt(2))\
+	\
+	abForm[1] = aSig1 * (4/5)\
+	abForm[2] = aSig2 * (4/5)\
+	abForm[3] = aSig3 * (4/5)\
+	\
+	abForm[4] = aSig4 * (2/5)\
+	abForm[5] = aSig5 * (2/5)\
+	abForm[6] = aSig6 * (2/5)\
+	abForm[7] = aSig7 * (2/5)\
+	abForm[8] = aSig8 * (2/5)\
+	\
+	abForm[9] = aSig9 * (4/35)\
+	abForm[10] = aSig10 * (4/35)\
+	abForm[11] = aSig11 * (4/35)\
+	abForm[12] = aSig12 * (4/35)\
+	abForm[13] = aSig13 * (4/35)\
+	abForm[14] = aSig14 * (4/35)\
+	abForm[15] = aSig15 * (4/35)\
+	\
+	abForm[16] = aSig16 * (1/70)\
+	abForm[17] = aSig17 * (1/70)\
+	abForm[18] = aSig18 * (1/70)\
+	abForm[19] = aSig19 * (1/70)\
+	abForm[20] = aSig20 * (1/70)\
+	abForm[21] = aSig21 * (1/70)\
+	abForm[22] = aSig22 * (1/70)\
+	abForm[23] = aSig23 * (1/70)\
+	abForm[24] = aSig24 * (1/70)\
+	\
+	elseif(iOrder == 5) then\
+	\
+	iOrder pow iOrder+1, 2\
+	abForm[] init iOrder\
+	\
+	abForm[0] = aSig0// * (1/sqrt(2))\
+	\
+	abForm[1] = aSig1 * (5/6)\
+	abForm[2] = aSig2 * (5/6)\
+	abForm[3] = aSig3 * (5/6)\
+	\
+	abForm[4] = aSig4 * (10/21)\
+	abForm[5] = aSig5 * (10/21)\
+	abForm[6] = aSig6 * (10/21)\
+	abForm[7] = aSig7 * (10/21)\
+	abForm[8] = aSig8 * (10/21)\
+	\
+	abForm[9] = aSig9 * (5/28)\
+	abForm[10] = aSig10 * (5/28)\
+	abForm[11] = aSig11 * (5/28)\
+	abForm[12] = aSig12 * (5/28)\
+	abForm[13] = aSig13 * (5/28)\
+	abForm[14] = aSig14 * (5/28)\
+	abForm[15] = aSig15 * (5/28)\
+	\
+	abForm[16] = aSig16 * (5/126)\
+	abForm[17] = aSig17 * (5/126)\
+	abForm[18] = aSig18 * (5/126)\
+	abForm[19] = aSig19 * (5/126)\
+	abForm[20] = aSig20 * (5/126)\
+	abForm[21] = aSig21 * (5/126)\
+	abForm[22] = aSig22 * (5/126)\
+	abForm[23] = aSig23 * (5/126)\
+	abForm[24] = aSig24 * (5/126)\
+	\
+	abForm[25] = aSig25 * (1/252)\
+	abForm[26] = aSig26 * (1/252)\
+	abForm[27] = aSig27 * (1/252)\
+	abForm[28] = aSig28 * (1/252)\
+	abForm[29] = aSig29 * (1/252)\
+	abForm[30] = aSig30 * (1/252)\
+	abForm[31] = aSig31 * (1/252)\
+	abForm[32] = aSig32 * (1/252)\
+	abForm[33] = aSig33 * (1/252)\
+	abForm[34] = aSig34 * (1/252)\
+	abForm[35] = aSig35 * (1/252)\
+\uc0\u8232 \
+	elseif(iOrder == 6) then\
+	\
+	iOrder pow iOrder+1, 2\
+	abForm[] init iOrder\
+	\
+	abForm[0] = aSig0// * (1/sqrt(2))\
+	\
+	abForm[1] = aSig1 * (6/7)\
+	abForm[2] = aSig2 * (6/7)\
+	abForm[3] = aSig3 * (6/7)\
+	\
+	abForm[4] = aSig4 * (15/28)\
+	abForm[5] = aSig5 * (15/28)\
+	abForm[6] = aSig6 * (15/28)\
+	abForm[7] = aSig7 * (15/28)\
+	abForm[8] = aSig8 * (15/28)\
+	\
+	abForm[9] = aSig9 * (5/21)\
+	abForm[10] = aSig10 * (5/21)\
+	abForm[11] = aSig11 * (5/21)\
+	abForm[12] = aSig12 * (5/21)\
+	abForm[13] = aSig13 * (5/21)\
+	abForm[14] = aSig14 * (5/21)\
+	abForm[15] = aSig15 * (5/21)\
+	\
+	abForm[16] = aSig16 * (1/14)\
+	abForm[17] = aSig17 * (1/14)\
+	abForm[18] = aSig18 * (1/14)\
+	abForm[19] = aSig19 * (1/14)\
+	abForm[20] = aSig20 * (1/14)\
+	abForm[21] = aSig21 * (1/14)\
+	abForm[22] = aSig22 * (1/14)\
+	abForm[23] = aSig23 * (1/14)\
+	abForm[24] = aSig24 * (1/14)\
+	\
+	abForm[25] = aSig25 * (1/77)\
+	abForm[26] = aSig26 * (1/77)\
+	abForm[27] = aSig27 * (1/77)\
+	abForm[28] = aSig28 * (1/77)\
+	abForm[29] = aSig29 * (1/77)\
+	abForm[30] = aSig30 * (1/77)\
+	abForm[31] = aSig31 * (1/77)\
+	abForm[32] = aSig32 * (1/77)\
+	abForm[33] = aSig33 * (1/77)\
+	abForm[34] = aSig34 * (1/77)\
+	abForm[35] = aSig35 * (1/77)\
+	\
+	abForm[36] = aSig36 * (1/924)\
+	abForm[37] = aSig37 * (1/924)\
+	abForm[38] = aSig38 * (1/924)\
+	abForm[39] = aSig39 * (1/924)\
+	abForm[40] = aSig40 * (1/924)\
+	abForm[41] = aSig41 * (1/924)\
+	abForm[42] = aSig42 * (1/924)\
+	abForm[43] = aSig43 * (1/924)\
+	abForm[44] = aSig44 * (1/924)\
+	abForm[45] = aSig45 * (1/924)\
+	abForm[46] = aSig46 * (1/924)\
+	abForm[47] = aSig47 * (1/924)\
+	abForm[48] = aSig48 * (1/924)\
+	\
+	elseif(iOrder == 7) then\
+	\
+	iOrder pow iOrder+1, 2\
+	abForm[] init iOrder\
+	\
+	abForm[0] = aSig0// * (1/sqrt(2))\
+	\
+	abForm[1] = aSig1 * (7/8)\
+	abForm[2] = aSig2 * (7/8)\
+	abForm[3] = aSig3 * (7/8)\
+	\
+	abForm[4] = aSig4 * (7/12)\
+	abForm[5] = aSig5 * (7/12)\
+	abForm[6] = aSig6 * (7/12)\
+	abForm[7] = aSig7 * (7/12)\
+	abForm[8] = aSig8 * (7/12)\
+	\
+	abForm[9] = aSig9 * (7/24)\
+	abForm[10] = aSig10 * (7/24)\
+	abForm[11] = aSig11 * (7/24)\
+	abForm[12] = aSig12 * (7/24)\
+	abForm[13] = aSig13 * (7/24)\
+	abForm[14] = aSig14 * (7/24)\
+	abForm[15] = aSig15 * (7/24)\
+	\
+	abForm[16] = aSig16 * (7/66)\
+	abForm[17] = aSig17 * (7/66)\
+	abForm[18] = aSig18 * (7/66)\
+	abForm[19] = aSig19 * (7/66)\
+	abForm[20] = aSig20 * (7/66)\
+	abForm[21] = aSig21 * (7/66)\
+	abForm[22] = aSig22 * (7/66)\
+	abForm[23] = aSig23 * (7/66)\
+	abForm[24] = aSig24 * (7/66)\
+	\
+	abForm[25] = aSig25 * (7/264)\
+	abForm[26] = aSig26 * (7/264)\
+	abForm[27] = aSig27 * (7/264)\
+	abForm[28] = aSig28 * (7/264)\
+	abForm[29] = aSig29 * (7/264)\
+	abForm[30] = aSig30 * (7/264)\
+	abForm[31] = aSig31 * (7/264)\
+	abForm[32] = aSig32 * (7/264)\
+	abForm[33] = aSig33 * (7/264)\
+	abForm[34] = aSig34 * (7/264)\
+	abForm[35] = aSig35 * (7/264)\
+	; \'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96x\'96mathematica \'96x\'96 faust\
+	abForm[36] = aSig36 * (7/1716);   \'96\'96\'96 19845/999176\
+	abForm[37] = aSig37 * (7/1716)\
+	abForm[38] = aSig38 * (7/1716)\
+	abForm[39] = aSig39 * (7/1716)\
+	abForm[40] = aSig40 * (7/1716)\
+	abForm[41] = aSig41 * (7/1716)\
+	abForm[42] = aSig42 * (7/1716)\
+	abForm[43] = aSig43 * (7/1716)\
+	abForm[44] = aSig44 * (7/1716)\
+	abForm[45] = aSig45 * (7/1716)\
+	abForm[46] = aSig46 * (7/1716)\
+	abForm[47] = aSig47 * (7/1716)\
+	abForm[48] = aSig48 * (7/1716)\
+	; \'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96\'96x\'96mathematica \'96x\'96 faust\
+	abForm[48] = aSig48 * (1/3432);   \'96\'96 99225/7547084\
+	abForm[49] = aSig49 * (1/3432)\
+	abForm[50] = aSig50 * (1/3432)\
+	abForm[51] = aSig51 * (1/3432)\
+	abForm[52] = aSig52 * (1/3432)\
+	abForm[53] = aSig53 * (1/3432)\
+	abForm[54] = aSig54 * (1/3432)\
+	abForm[55] = aSig55 * (1/3432)\
+	abForm[56] = aSig56 * (1/3432)\
+	abForm[57] = aSig57 * (1/3432)\
+	abForm[58] = aSig58 * (1/3432)\
+	abForm[59] = aSig59 * (1/3432)\
+	abForm[60] = aSig60 * (1/3432)\
+	abForm[61] = aSig61 * (1/3432)\
+	abForm[62] = aSig62 * (1/3432)\
+	abForm[63] = aSig63 * (1/3432)\
+	\
+	endif\
+	\
+	xout abForm\
+	\
+endop\
+\uc0\u8232 \
+opcode vMicDecode, a, a[]iiip\
+	\
+	abForm[], iTheta, iPhi, imp, iOrder	xin\
+	\
+	abForm[0] = abForm[0]*(1-imp)\
+	\
+	if(iOrder == 1) then\
+	aout = abForm[0] + imp*( abForm[1]*ambixFormula(iTheta,iPhi,1) + \
+							abForm[2]*ambixFormula(iTheta,iPhi,2) +\
+							abForm[3]*ambixFormula(iTheta,iPhi,3))\
+	\
+	elseif(iOrder == 2) then\
+	aout = abForm[0] + imp*( abForm[1]*ambixFormula(iTheta,iPhi,1) + \
+							abForm[2]*ambixFormula(iTheta,iPhi,2) +\
+							abForm[3]*ambixFormula(iTheta,iPhi,3) + \
+							abForm[4]*ambixFormula(iTheta,iPhi,4) + \
+							abForm[5]*ambixFormula(iTheta,iPhi,5) + \
+							abForm[6]*ambixFormula(iTheta,iPhi,6) + \
+							abForm[7]*ambixFormula(iTheta,iPhi,7) + \
+							abForm[8]*ambixFormula(iTheta,iPhi,8))\
+	\
+	elseif(iOrder == 3) then	\
+	aout = abForm[0] + imp*( abForm[1]*ambixFormula(iTheta,iPhi,1) + \
+							abForm[2]*ambixFormula(iTheta,iPhi,2) +\
+							abForm[3]*ambixFormula(iTheta,iPhi,3) + \
+							abForm[4]*ambixFormula(iTheta,iPhi,4) + \
+							abForm[5]*ambixFormula(iTheta,iPhi,5) + \
+							abForm[6]*ambixFormula(iTheta,iPhi,6) + \
+							abForm[7]*ambixFormula(iTheta,iPhi,7) + \
+							abForm[8]*ambixFormula(iTheta,iPhi,8) + \
+							abForm[9]*ambixFormula(iTheta,iPhi,9) + \
+							abForm[10]*ambixFormula(iTheta,iPhi,10) + \
+							abForm[11]*ambixFormula(iTheta,iPhi,11) + \
+							abForm[12]*ambixFormula(iTheta,iPhi,12) + \
+							abForm[13]*ambixFormula(iTheta,iPhi,13) + \
+							abForm[14]*ambixFormula(iTheta,iPhi,14) + \
+							abForm[15]*ambixFormula(iTheta,iPhi,15))\
+	\
+	elseif(iOrder == 4) then\
+	aout = abForm[0] + imp*( abForm[1]*ambixFormula(iTheta,iPhi,1) + \
+							abForm[2]*ambixFormula(iTheta,iPhi,2) +\
+							abForm[3]*ambixFormula(iTheta,iPhi,3) + \
+							abForm[4]*ambixFormula(iTheta,iPhi,4) + \
+							abForm[5]*ambixFormula(iTheta,iPhi,5) + \
+							abForm[6]*ambixFormula(iTheta,iPhi,6) + \
+							abForm[7]*ambixFormula(iTheta,iPhi,7) + \
+							abForm[8]*ambixFormula(iTheta,iPhi,8) + \
+							abForm[9]*ambixFormula(iTheta,iPhi,9) + \
+							abForm[10]*ambixFormula(iTheta,iPhi,10) + \
+							abForm[11]*ambixFormula(iTheta,iPhi,11) + \
+							abForm[12]*ambixFormula(iTheta,iPhi,12) + \
+							abForm[13]*ambixFormula(iTheta,iPhi,13) + \
+							abForm[14]*ambixFormula(iTheta,iPhi,14) + \
+							abForm[15]*ambixFormula(iTheta,iPhi,15) + \
+							abForm[16]*ambixFormula(iTheta,iPhi,16) + \
+							abForm[17]*ambixFormula(iTheta,iPhi,17) + \
+							abForm[18]*ambixFormula(iTheta,iPhi,18) + \
+							abForm[19]*ambixFormula(iTheta,iPhi,19) + \
+							abForm[20]*ambixFormula(iTheta,iPhi,20) + \
+							abForm[21]*ambixFormula(iTheta,iPhi,21) + \
+							abForm[22]*ambixFormula(iTheta,iPhi,22) + \
+							abForm[23]*ambixFormula(iTheta,iPhi,23) + \
+							abForm[24]*ambixFormula(iTheta,iPhi,24))\
+																		\
+	elseif(iOrder == 5) then\
+	aout = abForm[0] + imp*( abForm[1]*ambixFormula(iTheta,iPhi,1) + \
+							abForm[2]*ambixFormula(iTheta,iPhi,2) +\
+							abForm[3]*ambixFormula(iTheta,iPhi,3) + \
+							abForm[4]*ambixFormula(iTheta,iPhi,4) + \
+							abForm[5]*ambixFormula(iTheta,iPhi,5) + \
+							abForm[6]*ambixFormula(iTheta,iPhi,6) + \
+							abForm[7]*ambixFormula(iTheta,iPhi,7) + \
+							abForm[8]*ambixFormula(iTheta,iPhi,8) + \
+							abForm[9]*ambixFormula(iTheta,iPhi,9) + \
+							abForm[10]*ambixFormula(iTheta,iPhi,10) + \
+							abForm[11]*ambixFormula(iTheta,iPhi,11) + \
+							abForm[12]*ambixFormula(iTheta,iPhi,12) + \
+							abForm[13]*ambixFormula(iTheta,iPhi,13) + \
+							abForm[14]*ambixFormula(iTheta,iPhi,14) + \
+							abForm[15]*ambixFormula(iTheta,iPhi,15) + \
+							abForm[16]*ambixFormula(iTheta,iPhi,16) + \
+							abForm[17]*ambixFormula(iTheta,iPhi,17) + \
+							abForm[18]*ambixFormula(iTheta,iPhi,18) + \
+							abForm[19]*ambixFormula(iTheta,iPhi,19) + \
+							abForm[20]*ambixFormula(iTheta,iPhi,20) + \
+							abForm[21]*ambixFormula(iTheta,iPhi,21) + \
+							abForm[22]*ambixFormula(iTheta,iPhi,22) + \
+							abForm[23]*ambixFormula(iTheta,iPhi,23) + \
+							abForm[24]*ambixFormula(iTheta,iPhi,24) + \
+							abForm[25]*ambixFormula(iTheta,iPhi,25) + \
+							abForm[26]*ambixFormula(iTheta,iPhi,26) + \
+							abForm[27]*ambixFormula(iTheta,iPhi,27) + \
+							abForm[28]*ambixFormula(iTheta,iPhi,28) + \
+							abForm[29]*ambixFormula(iTheta,iPhi,29) + \
+							abForm[30]*ambixFormula(iTheta,iPhi,30) + \
+							abForm[31]*ambixFormula(iTheta,iPhi,31) + \
+							abForm[32]*ambixFormula(iTheta,iPhi,32) + \
+							abForm[33]*ambixFormula(iTheta,iPhi,33) + \
+							abForm[34]*ambixFormula(iTheta,iPhi,34) + \
+							abForm[35]*ambixFormula(iTheta,iPhi,35))\
+							\
+	elseif(iOrder == 6) then						\
+	aout = abForm[0] + imp*( abForm[1]*ambixFormula(iTheta,iPhi,1) + \
+							abForm[2]*ambixFormula(iTheta,iPhi,2) +\
+							abForm[3]*ambixFormula(iTheta,iPhi,3) + \
+							abForm[4]*ambixFormula(iTheta,iPhi,4) + \
+							abForm[5]*ambixFormula(iTheta,iPhi,5) + \
+							abForm[6]*ambixFormula(iTheta,iPhi,6) + \
+							abForm[7]*ambixFormula(iTheta,iPhi,7) + \
+							abForm[8]*ambixFormula(iTheta,iPhi,8) + \
+							abForm[9]*ambixFormula(iTheta,iPhi,9) + \
+							abForm[10]*ambixFormula(iTheta,iPhi,10) + \
+							abForm[11]*ambixFormula(iTheta,iPhi,11) + \
+							abForm[12]*ambixFormula(iTheta,iPhi,12) + \
+							abForm[13]*ambixFormula(iTheta,iPhi,13) + \
+							abForm[14]*ambixFormula(iTheta,iPhi,14) + \
+							abForm[15]*ambixFormula(iTheta,iPhi,15) + \
+							abForm[16]*ambixFormula(iTheta,iPhi,16) + \
+							abForm[17]*ambixFormula(iTheta,iPhi,17) + \
+							abForm[18]*ambixFormula(iTheta,iPhi,18) + \
+							abForm[19]*ambixFormula(iTheta,iPhi,19) + \
+							abForm[20]*ambixFormula(iTheta,iPhi,20) + \
+							abForm[21]*ambixFormula(iTheta,iPhi,21) + \
+							abForm[22]*ambixFormula(iTheta,iPhi,22) + \
+							abForm[23]*ambixFormula(iTheta,iPhi,23) + \
+							abForm[24]*ambixFormula(iTheta,iPhi,24) + \
+							abForm[25]*ambixFormula(iTheta,iPhi,25) + \
+							abForm[26]*ambixFormula(iTheta,iPhi,26) + \
+							abForm[27]*ambixFormula(iTheta,iPhi,27) + \
+							abForm[28]*ambixFormula(iTheta,iPhi,28) + \
+							abForm[29]*ambixFormula(iTheta,iPhi,29) + \
+							abForm[30]*ambixFormula(iTheta,iPhi,30) + \
+							abForm[31]*ambixFormula(iTheta,iPhi,31) + \
+							abForm[32]*ambixFormula(iTheta,iPhi,32) + \
+							abForm[33]*ambixFormula(iTheta,iPhi,33) + \
+							abForm[34]*ambixFormula(iTheta,iPhi,34) + \
+							abForm[35]*ambixFormula(iTheta,iPhi,35) + \
+							abForm[36]*ambixFormula(iTheta,iPhi,36) + \
+							abForm[37]*ambixFormula(iTheta,iPhi,37) + \
+							abForm[38]*ambixFormula(iTheta,iPhi,38) + \
+							abForm[39]*ambixFormula(iTheta,iPhi,39) + \
+							abForm[40]*ambixFormula(iTheta,iPhi,40) + \
+							abForm[41]*ambixFormula(iTheta,iPhi,41) + \
+							abForm[42]*ambixFormula(iTheta,iPhi,42) + \
+							abForm[43]*ambixFormula(iTheta,iPhi,43) + \
+							abForm[44]*ambixFormula(iTheta,iPhi,44) + \
+							abForm[45]*ambixFormula(iTheta,iPhi,45) + \
+							abForm[46]*ambixFormula(iTheta,iPhi,46) + \
+							abForm[47]*ambixFormula(iTheta,iPhi,47) + \
+							abForm[48]*ambixFormula(iTheta,iPhi,48))\
+	\
+	elseif(iOrder == 7) then\
+	aout = abForm[0] + imp*( abForm[1]*ambixFormula(iTheta,iPhi,1) + \
+							abForm[2]*ambixFormula(iTheta,iPhi,2) +\
+							abForm[3]*ambixFormula(iTheta,iPhi,3) + \
+							abForm[4]*ambixFormula(iTheta,iPhi,4) + \
+							abForm[5]*ambixFormula(iTheta,iPhi,5) + \
+							abForm[6]*ambixFormula(iTheta,iPhi,6) + \
+							abForm[7]*ambixFormula(iTheta,iPhi,7) + \
+							abForm[8]*ambixFormula(iTheta,iPhi,8) + \
+							abForm[9]*ambixFormula(iTheta,iPhi,9) + \
+							abForm[10]*ambixFormula(iTheta,iPhi,10) + \
+							abForm[11]*ambixFormula(iTheta,iPhi,11) + \
+							abForm[12]*ambixFormula(iTheta,iPhi,12) + \
+							abForm[13]*ambixFormula(iTheta,iPhi,13) + \
+							abForm[14]*ambixFormula(iTheta,iPhi,14) + \
+							abForm[15]*ambixFormula(iTheta,iPhi,15) + \
+							abForm[16]*ambixFormula(iTheta,iPhi,16) + \
+							abForm[17]*ambixFormula(iTheta,iPhi,17) + \
+							abForm[18]*ambixFormula(iTheta,iPhi,18) + \
+							abForm[19]*ambixFormula(iTheta,iPhi,19) + \
+							abForm[20]*ambixFormula(iTheta,iPhi,20) + \
+							abForm[21]*ambixFormula(iTheta,iPhi,21) + \
+							abForm[22]*ambixFormula(iTheta,iPhi,22) + \
+							abForm[23]*ambixFormula(iTheta,iPhi,23) + \
+							abForm[24]*ambixFormula(iTheta,iPhi,24) + \
+							abForm[25]*ambixFormula(iTheta,iPhi,25) + \
+							abForm[26]*ambixFormula(iTheta,iPhi,26) + \
+							abForm[27]*ambixFormula(iTheta,iPhi,27) + \
+							abForm[28]*ambixFormula(iTheta,iPhi,28) + \
+							abForm[29]*ambixFormula(iTheta,iPhi,29) + \
+							abForm[30]*ambixFormula(iTheta,iPhi,30) + \
+							abForm[31]*ambixFormula(iTheta,iPhi,31) + \
+							abForm[32]*ambixFormula(iTheta,iPhi,32) + \
+							abForm[33]*ambixFormula(iTheta,iPhi,33) + \
+							abForm[34]*ambixFormula(iTheta,iPhi,34) + \
+							abForm[35]*ambixFormula(iTheta,iPhi,35) + \
+							abForm[36]*ambixFormula(iTheta,iPhi,36) + \
+							abForm[37]*ambixFormula(iTheta,iPhi,37) + \
+							abForm[38]*ambixFormula(iTheta,iPhi,38) + \
+							abForm[39]*ambixFormula(iTheta,iPhi,39) + \
+							abForm[40]*ambixFormula(iTheta,iPhi,40) + \
+							abForm[41]*ambixFormula(iTheta,iPhi,41) + \
+							abForm[42]*ambixFormula(iTheta,iPhi,42) + \
+							abForm[43]*ambixFormula(iTheta,iPhi,43) + \
+							abForm[44]*ambixFormula(iTheta,iPhi,44) + \
+							abForm[45]*ambixFormula(iTheta,iPhi,45) + \
+							abForm[46]*ambixFormula(iTheta,iPhi,46) + \
+							abForm[47]*ambixFormula(iTheta,iPhi,47) + \
+							abForm[48]*ambixFormula(iTheta,iPhi,48) + \
+							abForm[49]*ambixFormula(iTheta,iPhi,49) + \
+							abForm[50]*ambixFormula(iTheta,iPhi,50) + \
+							abForm[51]*ambixFormula(iTheta,iPhi,51) + \
+							abForm[52]*ambixFormula(iTheta,iPhi,52) + \
+							abForm[53]*ambixFormula(iTheta,iPhi,53) + \
+							abForm[54]*ambixFormula(iTheta,iPhi,54) + \
+							abForm[55]*ambixFormula(iTheta,iPhi,55) + \
+							abForm[56]*ambixFormula(iTheta,iPhi,56) + \
+							abForm[57]*ambixFormula(iTheta,iPhi,57) + \
+							abForm[58]*ambixFormula(iTheta,iPhi,58) + \
+							abForm[59]*ambixFormula(iTheta,iPhi,59) + \
+							abForm[60]*ambixFormula(iTheta,iPhi,60) + \
+							abForm[61]*ambixFormula(iTheta,iPhi,61) + \
+							abForm[62]*ambixFormula(iTheta,iPhi,62) + \
+							abForm[63]*ambixFormula(iTheta,iPhi,63))\
+	endif\
+	\
+	xout aout\
+	\
+endop\
+\uc0\u8232 \
+\uc0\u8232 \
+opcode quadDecode, a[], a[]ii\
+	abForm[], isetup, iOrder 	xin\
+\uc0\u8232 \
+	if(isetup == 0) then\
+\uc0\u8232 \
+; Quad\
+\uc0\u8232 \
+	aQuadOut[] init 4\
+	\
+	aQuadOut[0] = vMicDecode(abForm, giPi-(giPi/2), 0, 0.5, iOrder)\
+	aQuadOut[1] = vMicDecode(abForm, giPi-(giPi/4), 0, 0.5, iOrder)\
+	aQuadOut[2] = vMicDecode(abForm, giPi-(giPi/6), 0, 0.5, iOrder)\
+	aQuadOut[3] = vMicDecode(abForm, giPi-(giPi/8), 0, 0.5, iOrder)\
+	\
+	\
+	else\
+\uc0\u8232 \
+; Cube\
+\uc0\u8232 \
+	aQuadOut[] init 8\
+	\
+	aQuadOut[0] = vMicDecode(abForm, giPi-(giPi/2), giPi/4, 0.5, iOrder)\
+	aQuadOut[1] = vMicDecode(abForm, giPi-(giPi/4), giPi/4, 0.5, iOrder)\
+	aQuadOut[2] = vMicDecode(abForm, giPi-(giPi/6), giPi/4, 0.5, iOrder)\
+	aQuadOut[3] = vMicDecode(abForm, giPi-(giPi/8), giPi/4, 0.5, iOrder)\
+	\
+	aQuadOut[4] = vMicDecode(abForm, (giPi/4)-(giPi/2), -1*(giPi/4), 0.5, iOrder)\
+	aQuadOut[5] = vMicDecode(abForm, (giPi/4)-(giPi/4), -1*(giPi/4), 0.5, iOrder)\
+	aQuadOut[6] = vMicDecode(abForm, (giPi/4)-(giPi/6), -1*(giPi/4), 0.5, iOrder)\
+	aQuadOut[7] = vMicDecode(abForm, (giPi/4)-(giPi/8), -1*(giPi/4), 0.5, iOrder)\
+	\
+	endif\
+	\
+	xout aQuadOut\
+	\
+	endop\
+\uc0\u8232 \
+}
